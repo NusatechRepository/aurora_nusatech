@@ -15,13 +15,157 @@
 
     <section class="header">
         <nav class="navbar navbar-expand-lg py-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img src="./assets/logo.svg" alt="logo aurora"> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <div class="container-fluid position-relative">
+                <button class="btn-transparent humburger" onclick="myFunction()">
+                    <img src="./assets/humburger.svg" alt="humberger">
                 </button>
+
+                <div class="navbar-mobile show" id="navbar-mobile">
+                    <div class="mb-4 mt-4">
+                        <button class=" p-0 btn btn-transparent" type="button" onclick="myFunction()">
+                            <img src="./assets/close.svg" alt="close navbar">
+                        </button>
+                    </div>
+                    <img src="./assets/logo.svg" class="mb-4" alt="logo aurora">
+                    <div class=" mb-4 w-100">
+                        <div class="accordion" id="footerAcordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="footerOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#footerItemOne" aria-expanded="true"
+                                        aria-controls="footerItemOne">
+                                        Trade
+                                    </button>
+                                </h2>
+                                <div id="footerItemOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="footerOne" data-bs-parent="#footerAcordion">
+                                    <div class="accordion-body">
+                                        <div class="d-flex flex-column">
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Swap</a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Limit</a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Liquidity</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="footerTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#footerItemTwo" aria-expanded="false"
+                                        aria-controls="footerItemTwo">
+                                        Earns
+                                    </button>
+                                </h2>
+                                <div id="footerItemTwo" class="accordion-collapse collapse" aria-labelledby="footerTwo"
+                                    data-bs-parent="#footerAcordion">
+                                    <div class="accordion-body">
+                                        <div class="d-flex flex-column">
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Pools</a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Farms</a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Launchpad</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="footerThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#footerItemThree" aria-expanded="false"
+                                        aria-controls="footerItemThree">
+                                        Events
+                                    </button>
+                                </h2>
+                                <div id="footerItemThree" class="accordion-collapse collapse"
+                                    aria-labelledby="footerThree" data-bs-parent="#footerAcordion">
+                                    <div class="accordion-body">
+                                        <div class="d-flex flex-column">
+                                            <a href="" class="text-sm white-text font-light font-open-sans mb-2">World
+                                                events</a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Airdrop</a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Stake</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="footerFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#footerItemFour" aria-expanded="false"
+                                        aria-controls="footerItemFour">
+                                        Blog
+                                    </button>
+                                </h2>
+                                <div id="footerItemFour" class="accordion-collapse collapse"
+                                    aria-labelledby="footerFour" data-bs-parent="#footerAcordion">
+                                    <div class="accordion-body">
+                                        <div class="d-flex flex-column">
+                                            <a href="" class="text-sm white-text font-light font-open-sans mb-2">All
+                                                articles </a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Announcement</a>
+                                            <a href="" class="text-sm white-text font-light font-open-sans mb-2">Project
+                                                update</a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Platform</a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Tutorials</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="footerFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#footerItemFive" aria-expanded="false"
+                                        aria-controls="footerItemFive">
+                                        Devs
+                                    </button>
+                                </h2>
+                                <div id="footerItemFive" class="accordion-collapse collapse"
+                                    aria-labelledby="footerFive" data-bs-parent="#footerAcordion">
+                                    <div class="accordion-body">
+                                        <div class="d-flex flex-column">
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Documentation
+                                            </a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Whitepaper</a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Releases</a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Faucet</a>
+                                            <a href=""
+                                                class="text-sm white-text font-light font-open-sans mb-2">Community</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-5">
+                        <div class="w-50 px-2">
+                            <a href="#"
+                                class="btn btn-primary font-open-sans d-block font-semibold py-2 white-text">Trade
+                                Now</a>
+
+                        </div>
+                        <div class="w-50">
+                            <a href="" class="btn btn-transparent white-text font-open-sans font-semibold">Join Our
+                                Discord</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="navbar-brand" href="#"> <img src="./assets/logo.svg" alt="logo aurora"> </a>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item ">
@@ -58,7 +202,7 @@
         <div class="container">
             <div class="row w-100 justify-content-between">
                 <div class="col-xl-7 col-lg-7 font-normal">
-                    <h6 class="white-text font-bold font-titilium text-lg">Welcome to</h6>
+                    <h6 class="white-text font-bold font-titilium text-lg welcome">Welcome to</h6>
                     <h1 class="green-text font-bold font-titilium text-xl">AURORA WORLD</h1>
                     <p class="white-text text-md font-light font-open-sans">Create your own world, make imagination come
                         true and trade
@@ -66,14 +210,14 @@
                         vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad
                         litora
                         torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <div class="d-flex align-items-center mt-5">
-                        <a href="#" class="btn btn-primary text-md font-semibold font-open-sans px-5">Get Started</a>
+                    <div class="d-flex flex-wrap align-items-center mt-5">
+                        <a href="#" class="btn btn-primary text-md font-bold font-open-sans px-5">Get Started</a>
                         <a href="" class="btn btn-transparent text-md font-bold font-open-sans ms-5">Learn more <img
                                 src="./assets/arrow-down.svg" alt="arrow-down"></a>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-4">
-                    <img src="./assets/hero-img.png" class="w-100" alt="hero img">
+                <div class="col-xl-5 col-lg-4 col-md-6 col-9 mx-auto">
+                    <img src="./assets/hero-img.png" class="w-100 img-hero" alt="hero img">
                 </div>
             </div>
         </div>
@@ -84,7 +228,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7 d-flex flex-column align-items-center">
                     <img src="./assets/hero-img.png" class="img-card mb-4" alt="card img">
-                    <h6 class="text-md-2 white-text text-center font-bold font-titilium">Millions of people who are
+                    <h6 class="text-md-2 white-text text-center font-bold font-titilium text-title">Millions of people
+                        who are
                         already our
                         residents</h6>
                     <p class="text-md grey-text text-center font-open-sans font-light">Lorem ipsum dolor sit amet,
@@ -96,7 +241,7 @@
                         condimentum lobortis.</p>
                 </div>
             </div>
-            <div class="d-flex justify-content-between mt-5">
+            <div class="d-flex timeline-strip mt-5 overflow-auto ">
                 <div class="card-item">
                     <img src="./assets/card-1.png" alt="card image">
                     <p class="green-text text-md-2 mb-0 font-titilium font-bold text-center">100,000,000 People</p>
@@ -116,12 +261,11 @@
         </div>
     </section>
 
-
     <section class="join-our">
         <div class="container ">
-            <div class="row justify-content-between">
-                <div class="col-lg-6">
-                    <h3 class="text-mg-2 white-text font-titilium font-bold mb-4">JOIN OUR RESIDENTS !</h3>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-xl-6 col-lg-7">
+                    <h3 class="text-md-2 white-text font-titilium font-bold mb-4 text-title">JOIN OUR RESIDENTS !</h3>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item mb-3">
                             <h2 class="accordion-header" id="headingOne">
@@ -205,7 +349,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-xl-5 col-lg-5 col-md-8 col-9 mx-auto">
                     <img src="./assets/hero-img.png" class="w-100" alt="image join our">
                 </div>
             </div>
@@ -216,7 +360,8 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-7">
-                    <h3 class="text-mg-2 white-text font-titilium font-bold mb-4"><span class="green-text">AURORA
+                    <h3 class="text-md-2 white-text text-title font-titilium font-bold mb-4"><span
+                            class="green-text">AURORA
                             WORLD</span> IS A BRAND
                         NEW TREND!
                     </h3>
@@ -224,24 +369,24 @@
                         come true and trade masterpieces of your creativity. Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
                         taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <a href="#" class="btn btn-primary font-open-sans font-bold px-4">Buy Aurora</a>
+                    <a href="#" class="btn btn-primary font-open-sans font-bold text-sm px-4">Buy Aurora</a>
                     <div class="d-flex flex-wrap mt-5">
                         <div class="me-5">
                             <p class="text-md grey-text font-open-sans font-light mb-0">Circulating Supply</p>
-                            <h6 class="text-md-2 green-text font-titilium font-bold">160,760,115</h6>
+                            <h6 class="text-md-2 text-information green-text font-titilium font-bold">160,760,115</h6>
                         </div>
                         <div class="me-5">
                             <p class="text-md grey-text font-open-sans font-light mb-0">Total Supply</p>
-                            <h6 class="text-md-2 green-text font-titilium font-bold">431,080,565</h6>
+                            <h6 class="text-md-2 text-information green-text font-titilium font-bold">431,080,565</h6>
                         </div>
                         <div class="me-5">
                             <p class="text-md grey-text font-open-sans font-light mb-0">Max Supply</p>
-                            <h6 class="text-md-2 green-text font-titilium font-bold">800,000,000</h6>
+                            <h6 class="text-md-2 text-information green-text font-titilium font-bold">800,000,000</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <img src="./assets/new-trend.png" class="w-100" alt="image join our">
+                <div class="col-lg-5 col-md-6 col-7 mx-auto">
+                    <img src="./assets/new-trend.png" class="w-100 mt-3" alt="image join our">
                 </div>
             </div>
         </div>
@@ -249,17 +394,17 @@
 
     <footer>
         <div class="container pb-3">
-            <div class="d-flex flex-wrap">
-                <div class="me-5">
+            <div class="d-flex flex-wrap footer-menu">
+                <div class="me-5 social-media">
                     <img src="./assets/logo-sm.svg" class="mb-3" alt="small logo">
                     <div class="d-flex">
                         <img src="./assets/facebook.svg" class="me-3" alt="">
                         <img src="./assets/twitter.svg" class="me-3" alt="">
                         <img src="./assets/linkedin.svg" class="me-3" alt="">
-                        <img src="./assets/instagram.svg" class="me-3" alt="">
+                        <img src="./assets/instagram.svg" alt="">
                     </div>
                 </div>
-                <div class="me-5">
+                <div class="me-5 hidden-small">
                     <p class="text-md white-text font-open-sans mb-4 font-semibold">Trade</p>
                     <div class="d-flex flex-column">
                         <a href="" class="text-sm white-text font-light font-open-sans mb-3">Swap</a>
@@ -267,7 +412,7 @@
                         <a href="" class="text-sm white-text font-light font-open-sans mb-3">Liquidity</a>
                     </div>
                 </div>
-                <div class="me-5">
+                <div class="me-5 hidden-small">
                     <p class="text-md white-text font-open-sans mb-4 font-semibold">Earns</p>
                     <div class="d-flex flex-column">
                         <a href="" class="text-sm white-text font-light font-open-sans mb-3">Pools</a>
@@ -275,7 +420,7 @@
                         <a href="" class="text-sm white-text font-light font-open-sans mb-3">Launchpad</a>
                     </div>
                 </div>
-                <div class="me-5">
+                <div class="me-5 hidden-small">
                     <p class="text-md white-text font-open-sans mb-4 font-semibold">Events</p>
                     <div class="d-flex flex-column">
                         <a href="" class="text-sm white-text font-light font-open-sans mb-3">World events</a>
@@ -283,7 +428,7 @@
                         <a href="" class="text-sm white-text font-light font-open-sans mb-3">Stake</a>
                     </div>
                 </div>
-                <div class="me-5">
+                <div class="me-5 hidden-small">
                     <p class="text-md white-text font-open-sans mb-4 font-semibold">Blog</p>
                     <div class="d-flex flex-column">
                         <a href="" class="text-sm white-text font-light font-open-sans mb-3">All articles </a>
@@ -293,7 +438,7 @@
                         <a href="" class="text-sm white-text font-light font-open-sans mb-3">Tutorials</a>
                     </div>
                 </div>
-                <div class="me-5">
+                <div class="me-5 hidden-small">
                     <p class="text-md white-text font-open-sans mb-4 font-semibold">Devs</p>
                     <div class="d-flex flex-column">
                         <a href="" class="text-sm white-text font-light font-open-sans mb-3">Documentation </a>
@@ -313,6 +458,119 @@
                         <button class="footer-botton"> <img src="./assets/arrow-right.svg" alt="arrow button"> </button>
                     </form>
                 </div>
+                <div class="footer-acordion mb-4 w-100">
+                    <div class="accordion" id="footerAcordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="footerOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#footerItemOne" aria-expanded="true" aria-controls="footerItemOne">
+                                    Trade
+                                </button>
+                            </h2>
+                            <div id="footerItemOne" class="accordion-collapse collapse show" aria-labelledby="footerOne"
+                                data-bs-parent="#footerAcordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex flex-column">
+                                        <a href="" class="text-sm white-text font-light font-open-sans mb-2">Swap</a>
+                                        <a href="" class="text-sm white-text font-light font-open-sans mb-2">Limit</a>
+                                        <a href=""
+                                            class="text-sm white-text font-light font-open-sans mb-2">Liquidity</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="footerTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#footerItemTwo" aria-expanded="false" aria-controls="footerItemTwo">
+                                    Earns
+                                </button>
+                            </h2>
+                            <div id="footerItemTwo" class="accordion-collapse collapse" aria-labelledby="footerTwo"
+                                data-bs-parent="#footerAcordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex flex-column">
+                                        <a href="" class="text-sm white-text font-light font-open-sans mb-2">Pools</a>
+                                        <a href="" class="text-sm white-text font-light font-open-sans mb-2">Farms</a>
+                                        <a href=""
+                                            class="text-sm white-text font-light font-open-sans mb-2">Launchpad</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="footerThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#footerItemThree" aria-expanded="false"
+                                    aria-controls="footerItemThree">
+                                    Events
+                                </button>
+                            </h2>
+                            <div id="footerItemThree" class="accordion-collapse collapse" aria-labelledby="footerThree"
+                                data-bs-parent="#footerAcordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex flex-column">
+                                        <a href="" class="text-sm white-text font-light font-open-sans mb-2">World
+                                            events</a>
+                                        <a href="" class="text-sm white-text font-light font-open-sans mb-2">Airdrop</a>
+                                        <a href="" class="text-sm white-text font-light font-open-sans mb-2">Stake</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="footerFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#footerItemFour" aria-expanded="false"
+                                    aria-controls="footerItemFour">
+                                    Blog
+                                </button>
+                            </h2>
+                            <div id="footerItemFour" class="accordion-collapse collapse" aria-labelledby="footerFour"
+                                data-bs-parent="#footerAcordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex flex-column">
+                                        <a href="" class="text-sm white-text font-light font-open-sans mb-2">All
+                                            articles </a>
+                                        <a href=""
+                                            class="text-sm white-text font-light font-open-sans mb-2">Announcement</a>
+                                        <a href="" class="text-sm white-text font-light font-open-sans mb-2">Project
+                                            update</a>
+                                        <a href=""
+                                            class="text-sm white-text font-light font-open-sans mb-2">Platform</a>
+                                        <a href=""
+                                            class="text-sm white-text font-light font-open-sans mb-2">Tutorials</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="footerFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#footerItemFive" aria-expanded="false"
+                                    aria-controls="footerItemFive">
+                                    Devs
+                                </button>
+                            </h2>
+                            <div id="footerItemFive" class="accordion-collapse collapse" aria-labelledby="footerFive"
+                                data-bs-parent="#footerAcordion">
+                                <div class="accordion-body">
+                                    <div class="d-flex flex-column">
+                                        <a href=""
+                                            class="text-sm white-text font-light font-open-sans mb-2">Documentation </a>
+                                        <a href=""
+                                            class="text-sm white-text font-light font-open-sans mb-2">Whitepaper</a>
+                                        <a href=""
+                                            class="text-sm white-text font-light font-open-sans mb-2">Releases</a>
+                                        <a href="" class="text-sm white-text font-light font-open-sans mb-2">Faucet</a>
+                                        <a href=""
+                                            class="text-sm white-text font-light font-open-sans mb-2">Community</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container bottom-footer">
@@ -324,6 +582,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
+    <script>
+        window.addEventListener('load', () => {
+            let scrollElement = document.querySelector('.timeline-strip');
+            scrollElement.scrollLeft = (scrollElement.scrollWidth - scrollElement.clientWidth) / 2;
+        });
+
+
+        function myFunction() {
+            var element = document.getElementById("navbar-mobile");
+            element.classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
