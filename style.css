@@ -269,6 +269,15 @@ a {
   margin: 0 24px;
   align-self: center;
 }
+
+.card-section .timeline-strip {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.card-section .timeline-strip::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 /* end card section */
 
 /* join-our */
